@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
 	"name": "Bio-Med to Garreg Mach",
-	"version": "1.2",
-	"description": "Replaces the text 'Bio-Med' with 'Garreg Mach' and 'Science Academy' or 'Academy' with 'Monestary'",
+	"version": "1.0",
+	"description": "Makes Bio-Med all the more holy.",
 	"content_scripts": 
 	[
 		{
