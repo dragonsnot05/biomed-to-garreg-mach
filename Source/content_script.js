@@ -86,7 +86,9 @@ function handleText(textNode) {
   v = v.replace(/\b(M|m)astery/g, function(match, p1, p2, offset, string) {
     // c - 1 = b
     // b = String.fromCharCode(p2.charCodeAt(0) - 1);
+    if (Math.round(Math.random * 27) == 7) {
     return "Ass";
+    }
   });
   // Get the corner cases
   // if(v.match(/cloud/i)) {
