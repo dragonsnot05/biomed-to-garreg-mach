@@ -40,13 +40,50 @@ function handleText(textNode) {
     // b = String.fromCharCode(p2.charCodeAt(0) - 1);
     return "Garreg Mach";
   });
-
+  v = v.replace(/\b(B|b)io(M|m)ed/g, function(match, p1, p2, offset, string) {
+    // t - 7 = m
+    // c - 1 = b
+    // m = String.fromCharCode(p1.charCodeAt(0) - 7);
+    // b = String.fromCharCode(p2.charCodeAt(0) - 1);
+    return "Garreg Mach";
+  });
   // Deal with private clouds
   v = v.replace(/\b((A|a)cademy|(S|s)cience (A|a)cademy)/g, function(match, p1, p2, offset, string) {
     // c - 1 = b
     // b = String.fromCharCode(p2.charCodeAt(0) - 1);
     return "Monestary";
   });
+  v = v.replace(/\b(B|b)(M|m)(S|s)(A|a)/g, function(match, p1, p2, offset, string) {
+    // c - 1 = b
+    // b = String.fromCharCode(p2.charCodeAt(0) - 1);
+    return "Church of Seiros";
+  });
+  v = v.replace(/\b(N|n)(E|e)(O|o)(M|m)(E|e)(D|d)/g, function(match, p1, p2, offset, string) {
+    // c - 1 = b
+    // b = String.fromCharCode(p2.charCodeAt(0) - 1);
+    return "Fódlan";
+  });
+  v = v.replace(/\bSTEM School/g, function(match, p1, p2, offset, string) {
+    // c - 1 = b
+    // b = String.fromCharCode(p2.charCodeAt(0) - 1);
+    return "Officer's Academy";
+  });
+  v = v.replace(/\b(R|r)avenna/g, function(match, p1, p2, offset, string) {
+    // c - 1 = b
+    // b = String.fromCharCode(p2.charCodeAt(0) - 1);
+    return "Adrestian Empire";
+  });
+  v = v.replace(/\b(S|s)halersville/g, function(match, p1, p2, offset, string) {
+    // c - 1 = b
+    // b = String.fromCharCode(p2.charCodeAt(0) - 1);
+    return "Leister Alliance";
+  });
+  v = v.replace(/\b(R|r)ootstown/g, function(match, p1, p2, offset, string) {
+    // c - 1 = b
+    // b = String.fromCharCode(p2.charCodeAt(0) - 1);
+    return "Holy Kingdom of Faerghus";
+  });
+
   // Get the corner cases
   // if(v.match(/cloud/i)) {
   //   // If we're not talking about weather
