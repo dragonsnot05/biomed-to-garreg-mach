@@ -76,7 +76,7 @@ function handleText(textNode) {
   v = v.replace(/\bSTEM School/g, function(match, p1, p2, offset, string) {
     // c - 1 = b
     // b = String.fromCharCode(p2.charCodeAt(0) - 1);
-    return "Officer's Monestary";
+    return "Officer's Academy";
   });
   v = v.replace(/\b(R|r)avenna/g, function(match, p1, p2, offset, string) {
     // c - 1 = b
