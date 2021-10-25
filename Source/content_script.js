@@ -47,11 +47,21 @@ function handleText(textNode) {
     // b = String.fromCharCode(p2.charCodeAt(0) - 1);
     return "Garreg Mach";
   });
-  // Deal with private clouds
+  // Deal with butts
+  v = v.replace(/\bmsastem)/g, function(match, p1, p2, offset, string) {
+    // c - 1 = b
+    // b = String.fromCharCode(p2.charCodeAt(0) - 1);
+    return "garregmach";
+  });
+  v = v.replace(/\biomedscienceacademy)/g, function(match, p1, p2, offset, string) {
+    // c - 1 = b
+    // b = String.fromCharCode(p2.charCodeAt(0) - 1);
+    return "garregmach";
+  });
   v = v.replace(/\b((A|a)cademy|(S|s)cience (A|a)cademy)/g, function(match, p1, p2, offset, string) {
     // c - 1 = b
     // b = String.fromCharCode(p2.charCodeAt(0) - 1);
-    return "Monestary";
+    return "Monastery";
   });
   v = v.replace(/\b(B|b)(M|m)(S|s)(A|a)/g, function(match, p1, p2, offset, string) {
     // c - 1 = b
@@ -66,7 +76,7 @@ function handleText(textNode) {
   v = v.replace(/\bSTEM School/g, function(match, p1, p2, offset, string) {
     // c - 1 = b
     // b = String.fromCharCode(p2.charCodeAt(0) - 1);
-    return "Officer's Academy";
+    return "Officer's Monestary";
   });
   v = v.replace(/\b(R|r)avenna/g, function(match, p1, p2, offset, string) {
     // c - 1 = b
@@ -91,7 +101,7 @@ function handleText(textNode) {
     }
   });
   // Get the corner cases
-  // if(v.match(/cloud/i)) {
+  // if(v.match(/butt/i)) {
   //   // If we're not talking about weather
   //   // if(v.match(/PaaS|SaaS|IaaS|computing|data|storage|cluster|distributed|server|hosting|provider|grid|enterprise|provision|apps|hardware|software|/i)) {
   //     v = v.replace(/(S|s)cience /gi, function(match, p1, offset, string) {
