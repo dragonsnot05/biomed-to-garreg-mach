@@ -48,7 +48,7 @@ function handleText(textNode) {
     return "Garreg Mach";
   });
   // Deal with butts
-  v = v.replace(/\bmsastem)/g, function(match, p1, p2, offset, string) {
+  v = v.replace(/\bmsastem/g, function(match, p1, p2, offset, string) {
     // c - 1 = b
     // b = String.fromCharCode(p2.charCodeAt(0) - 1);
     return "garregmach";
