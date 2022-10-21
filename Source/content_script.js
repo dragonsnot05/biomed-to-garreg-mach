@@ -96,6 +96,9 @@ function handleText(textNode) {
   v = v.replace(/\b(M|m)astery/g, function(match, p1, p2, offset, string) {
     return "Goldlewis";
   });
+  v = v.replace(/\b(S|s)(T|t)(E|e)(M|m)/g, function(match, p1, p2, offset, string) {
+    return "Strategy";
+  });
   // Get the corner cases
   // if(v.match(/butt/i)) {
   //   // If we're not talking about weather
